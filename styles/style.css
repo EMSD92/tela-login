@@ -36,7 +36,7 @@ section#login{
     height: 530px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.447);
-
+    transform: translate(-50%,-50%);
     transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
@@ -67,11 +67,31 @@ form > div.campo{
     width: 100%;
     display: block;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
+    border: 2px solid #5f2c82;
+}
+form > div.campo > i{
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+form> div.campo > input{
+    background-color: #49a09d;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
 }
 
-
+form> div.campo >input:focus-within{
+    background-color: white;
+    border: 0px;
+}
 
 form > div> input[type=submit]{
     display: block;
